@@ -10,7 +10,7 @@ import { NextResponse } from 'next/server';
 const WEB_APP_URL =
   process.env.NODE_ENV === 'production'
     ? 'https://tuturuuu.com'
-    : 'http://localhost:7803';
+    : 'http://127.0.0.1:7803';
 
 const authMiddleware = createCentralizedAuthMiddleware({
   webAppUrl: WEB_APP_URL,
